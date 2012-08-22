@@ -24,6 +24,8 @@
 @property (strong, nonatomic) IBOutlet UINavigationBar *barTop;
 @property (strong, nonatomic) IBOutlet UIButton *btnBarControl;
 
+@property (strong, nonatomic) NSUserDefaults *userDefaults;
+
 -(IBAction)btnPrerss:(id)sender;
 -(void)loadWebPageWithString:(NSString *)urlString;
 - (IBAction)BarHideOrShow:(id)sender;

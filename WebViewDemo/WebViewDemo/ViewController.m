@@ -14,12 +14,15 @@
 @synthesize webView;
 @synthesize barTop;
 @synthesize btnBarControl;
+@synthesize userDefaults;
 
 -(IBAction)btnPrerss:(id)sender
 {
     [urlTxt resignFirstResponder];
     [self loadWebPageWithString:urlTxt.text];
-    
+    [userDefaults setObject:urlTxt.text forKey:@"webviewurl"];
+    [userDefaults synchronize];
+        
 }
 -(void)loadWebPageWithString:(NSString *)urlString
 {
@@ -51,7 +54,13 @@
     [activityIndicatorView setCenter: self.view.center];
     [activityIndicatorView setActivityIndicatorViewStyle: UIActivityIndicatorViewStyleWhite] ; 
     [self.view addSubview : activityIndicatorView];
-    //[self btnPrerss:nil];
+    
+    NSString *url=[userDefaults objectForKey:@"webviewurl"];
+    if(url!=nil)
+    {
+        urlTxt.text=url;
+    }
+    [self btnPrerss:nil];
 }
 
 - (void)viewDidUnload

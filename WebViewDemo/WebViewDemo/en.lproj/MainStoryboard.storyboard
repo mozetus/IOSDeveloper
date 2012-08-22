@@ -24,7 +24,7 @@
                                 <items>
                                     <navigationItem id="15">
                                         <nil key="title"/>
-                                        <textField key="titleView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="http://m.tmall.com" borderStyle="roundedRect" minimumFontSize="17" id="18">
+                                        <textField key="titleView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="18">
                                             <rect key="frame" x="5" y="7" width="254" height="31"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -67,7 +67,7 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="-295" y="-14"/>
+            <point key="canvasLocation" x="-816" y="-31"/>
         </scene>
     </scenes>
     <classes>
