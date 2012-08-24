@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		77C9A64A15E1264400AF0E01 /* bbcc_039.png in Resources */ = {isa = PBXBuildFile; fileRef = 77C9A64915E1264400AF0E01 /* bbcc_039.png */; };
+		414F988E15E7C7CB00B99719 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 414F988D15E7C7CB00B99719 /* icon.png */; };
 		77CB8C1815E10CAF002A755C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77CB8C1715E10CAF002A755C /* UIKit.framework */; };
 		77CB8C1A15E10CAF002A755C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77CB8C1915E10CAF002A755C /* Foundation.framework */; };
 		77CB8C2015E10CAF002A755C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 77CB8C1E15E10CAF002A755C /* InfoPlist.strings */; };
@@ -18,7 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		77C9A64915E1264400AF0E01 /* bbcc_039.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bbcc_039.png; path = ../../../../../Pictures/bbcc_039.png; sourceTree = "<group>"; };
+		414F988D15E7C7CB00B99719 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../../Resources/icon.png; sourceTree = "<group>"; };
 		77CB8C1315E10CAF002A755C /* TestWebTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestWebTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77CB8C1715E10CAF002A755C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		77CB8C1915E10CAF002A755C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -88,7 +88,7 @@
 		77CB8C1C15E10CAF002A755C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				77C9A64915E1264400AF0E01 /* bbcc_039.png */,
+				414F988D15E7C7CB00B99719 /* icon.png */,
 				77CB8C1D15E10CAF002A755C /* WebViewDemo-Info.plist */,
 				77CB8C1E15E10CAF002A755C /* InfoPlist.strings */,
 				77CB8C2115E10CAF002A755C /* main.m */,
@@ -150,7 +150,7 @@
 			files = (
 				77CB8C2015E10CAF002A755C /* InfoPlist.strings in Resources */,
 				77CB8C2915E10CAF002A755C /* MainStoryboard.storyboard in Resources */,
-				77C9A64A15E1264400AF0E01 /* bbcc_039.png in Resources */,
+				414F988E15E7C7CB00B99719 /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,7 +168,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export CODESIGN_ALLOCATE=/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate\nif [ \"${PLATFORM_NAME}\" == \"iphoneos\" ]; then\n/Developer/iphoneentitlements401/gen_entitlements.py \"my.company.${PROJECT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\";\ncodesign -f -s \"IOS Developer\" --entitlements \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/\"\nfi";
+			shellScript = "export CODESIGN_ALLOCATE=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate\nif [ \"${PLATFORM_NAME}\" == \"iphoneos\" ]; then\n/Applications/Xcode.app/Contents/Developer/iphoneentitlements401/gen_entitlements.py \"my.company.${PROJECT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\";\ncodesign -f -s \"IOS Developer\" --entitlements \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/\"\nfi";
 		};
 /* End PBXShellScriptBuildPhase section */
 
