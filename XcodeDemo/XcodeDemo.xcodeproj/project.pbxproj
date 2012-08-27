@@ -14,8 +14,10 @@
 		773D6CFD15EBA3F200DC5AB0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 773D6CFC15EBA3F200DC5AB0 /* main.m */; };
 		773D6D0115EBA3F200DC5AB0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 773D6D0015EBA3F200DC5AB0 /* AppDelegate.m */; };
 		773D6D0415EBA3F200DC5AB0 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 773D6D0215EBA3F200DC5AB0 /* MainStoryboard_iPhone.storyboard */; };
-		773D6D0715EBA3F200DC5AB0 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 773D6D0515EBA3F200DC5AB0 /* MainStoryboard_iPad.storyboard */; };
 		773D6D0A15EBA3F200DC5AB0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 773D6D0915EBA3F200DC5AB0 /* ViewController.m */; };
+		773D6D1115EBA6F000DC5AB0 /* 1133470.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 773D6D1015EBA6F000DC5AB0 /* 1133470.jpg */; };
+		773D6D1415EBB6DA00DC5AB0 /* blueButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 773D6D1215EBB6DA00DC5AB0 /* blueButton.png */; };
+		773D6D1515EBB6DA00DC5AB0 /* whiteButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 773D6D1315EBB6DA00DC5AB0 /* whiteButton.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,9 +32,11 @@
 		773D6CFF15EBA3F200DC5AB0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		773D6D0015EBA3F200DC5AB0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		773D6D0315EBA3F200DC5AB0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		773D6D0615EBA3F200DC5AB0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		773D6D0815EBA3F200DC5AB0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		773D6D0915EBA3F200DC5AB0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		773D6D1015EBA6F000DC5AB0 /* 1133470.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1133470.jpg; sourceTree = "<group>"; };
+		773D6D1215EBB6DA00DC5AB0 /* blueButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueButton.png; sourceTree = "<group>"; };
+		773D6D1315EBB6DA00DC5AB0 /* whiteButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteButton.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +86,6 @@
 				773D6CFF15EBA3F200DC5AB0 /* AppDelegate.h */,
 				773D6D0015EBA3F200DC5AB0 /* AppDelegate.m */,
 				773D6D0215EBA3F200DC5AB0 /* MainStoryboard_iPhone.storyboard */,
-				773D6D0515EBA3F200DC5AB0 /* MainStoryboard_iPad.storyboard */,
 				773D6D0815EBA3F200DC5AB0 /* ViewController.h */,
 				773D6D0915EBA3F200DC5AB0 /* ViewController.m */,
 				773D6CF715EBA3F200DC5AB0 /* Supporting Files */,
@@ -93,6 +96,9 @@
 		773D6CF715EBA3F200DC5AB0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				773D6D1215EBB6DA00DC5AB0 /* blueButton.png */,
+				773D6D1315EBB6DA00DC5AB0 /* whiteButton.png */,
+				773D6D1015EBA6F000DC5AB0 /* 1133470.jpg */,
 				773D6CF815EBA3F200DC5AB0 /* XcodeDemo-Info.plist */,
 				773D6CF915EBA3F200DC5AB0 /* InfoPlist.strings */,
 				773D6CFC15EBA3F200DC5AB0 /* main.m */,
@@ -154,7 +160,9 @@
 			files = (
 				773D6CFB15EBA3F200DC5AB0 /* InfoPlist.strings in Resources */,
 				773D6D0415EBA3F200DC5AB0 /* MainStoryboard_iPhone.storyboard in Resources */,
-				773D6D0715EBA3F200DC5AB0 /* MainStoryboard_iPad.storyboard in Resources */,
+				773D6D1115EBA6F000DC5AB0 /* 1133470.jpg in Resources */,
+				773D6D1415EBB6DA00DC5AB0 /* blueButton.png in Resources */,
+				773D6D1515EBB6DA00DC5AB0 /* whiteButton.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,14 +198,6 @@
 			name = MainStoryboard_iPhone.storyboard;
 			sourceTree = "<group>";
 		};
-		773D6D0515EBA3F200DC5AB0 /* MainStoryboard_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				773D6D0615EBA3F200DC5AB0 /* en */,
-			);
-			name = MainStoryboard_iPad.storyboard;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -225,7 +225,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -247,7 +247,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -259,6 +259,7 @@
 				GCC_PREFIX_HEADER = "XcodeDemo/XcodeDemo-Prefix.pch";
 				INFOPLIST_FILE = "XcodeDemo/XcodeDemo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -270,6 +271,7 @@
 				GCC_PREFIX_HEADER = "XcodeDemo/XcodeDemo-Prefix.pch";
 				INFOPLIST_FILE = "XcodeDemo/XcodeDemo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -293,6 +295,7 @@
 				773D6D0F15EBA3F200DC5AB0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
