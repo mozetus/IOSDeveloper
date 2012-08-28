@@ -20,7 +20,7 @@
 interfaceOrientation duration:(NSTimeInterval)duration {
     if (interfaceOrientation == UIInterfaceOrientationPortrait
 		|| interfaceOrientation ==
-		UIInterfaceOrientationPortraitUpsideDown)
+		UIInterfaceOrientationPortraitUpsideDown )
     {
         button1.frame = CGRectMake(20, 20, 125, 125);
         button2.frame = CGRectMake(175, 20, 125, 125);
