@@ -13,6 +13,9 @@
 @end
 
 @implementation ViewController
+
+@synthesize portrait;
+@synthesize landscape;
 @synthesize txtUserName;
 @synthesize txtPassword;
 @synthesize lblScore;
@@ -20,6 +23,7 @@
 @synthesize leftSwitch;
 @synthesize rightSwitch;
 @synthesize btnPressed;
+@synthesize tab;
 
 - (IBAction)slideChange:(id)sender
 {
@@ -50,6 +54,7 @@
 }
 
 - (IBAction)buttonPressed{
+    /*
     UIActionSheet *actionSheet = [[UIActionSheet alloc]
                                   initWithTitle:@"Are you sure?"
                                   delegate:self
@@ -57,10 +62,47 @@
                                   destructiveButtonTitle:@"Yes, I’m Sure!"
                                   otherButtonTitles:nil];
     [actionSheet showInView:self.view];
-
+     */
     //[actionsheet release];
 }
 
+//屏幕翻转事件
+-(void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
+{
+    switch (toInterfaceOrientation) {
+        case UIInterfaceOrientationPortrait:
+            self.view=self.portrait;
+            self.view.transform=CGAffineTransformIdentity;
+            self.view.transform=CGAffineTransformMakeRotation(degreesToRadians(0));
+            self.view.bounds=CGRectMake(0.0, 0.0, 320.0, 460.0);
+            break;
+        case UIInterfaceOrientationLandscapeLeft:
+            self.view = self.landscape;
+            self.view.transform = CGAffineTransformIdentity;
+            self.view.transform =
+            CGAffineTransformMakeRotation(degreesToRadians(-90));
+            self.view.bounds = CGRectMake(0.0, 0.0, 480.0, 300.0);
+            break;
+        case UIInterfaceOrientationPortraitUpsideDown:
+            self.view = self.portrait;
+            self.view.transform = CGAffineTransformIdentity;
+            self.view.transform =
+            CGAffineTransformMakeRotation(degreesToRadians(180));
+            self.view.bounds = CGRectMake(0.0, 0.0, 320.0, 460.0);
+            break;
+        case UIInterfaceOrientationLandscapeRight:
+            self.view = self.landscape;
+            self.view.transform = CGAffineTransformIdentity;
+            self.view.transform =
+            CGAffineTransformMakeRotation(degreesToRadians(90));
+            self.view.bounds = CGRectMake(0.0, 0.0, 480.0, 300.0);
+            break;
+        default:
+            break;
+    }
+}
+
+//委托方法
 - (void)actionSheet:(UIActionSheet *)actionSheet
 didDismissWithButtonIndex:(NSInteger)buttonIndex
 {
@@ -116,6 +158,9 @@ didDismissWithButtonIndex:(NSInteger)buttonIndex
     [self setLeftSwitch:nil];
     [self setRightSwitch:nil];
     [self setBtnPressed:nil];
+    [self setTab:nil];
+    [self setPortrait:nil];
+    [self setLandscape:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
