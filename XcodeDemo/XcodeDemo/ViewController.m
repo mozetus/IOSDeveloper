@@ -69,6 +69,7 @@
 //屏幕翻转事件
 -(void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
 {
+    /*
     switch (toInterfaceOrientation) {
         case UIInterfaceOrientationPortrait:
             self.view=self.portrait;
@@ -100,6 +101,7 @@
         default:
             break;
     }
+     */
 }
 
 //委托方法

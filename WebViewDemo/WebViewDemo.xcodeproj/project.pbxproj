@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		414F988E15E7C7CB00B99719 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 414F988D15E7C7CB00B99719 /* icon.png */; };
+		77466C3D15F1E69E0067F5FF /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 77466C3C15F1E69E0067F5FF /* icon.png */; };
 		77CB8C1815E10CAF002A755C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77CB8C1715E10CAF002A755C /* UIKit.framework */; };
 		77CB8C1A15E10CAF002A755C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77CB8C1915E10CAF002A755C /* Foundation.framework */; };
 		77CB8C2015E10CAF002A755C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 77CB8C1E15E10CAF002A755C /* InfoPlist.strings */; };
@@ -18,8 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		414F988D15E7C7CB00B99719 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../../Resources/icon.png; sourceTree = "<group>"; };
-		77CB8C1315E10CAF002A755C /* TestWebTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestWebTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		77466C3C15F1E69E0067F5FF /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		77CB8C1315E10CAF002A755C /* WebViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77CB8C1715E10CAF002A755C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		77CB8C1915E10CAF002A755C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		77CB8C1D15E10CAF002A755C /* WebViewDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WebViewDemo-Info.plist"; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 		77CB8C1415E10CAF002A755C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				77CB8C1315E10CAF002A755C /* TestWebTools.app */,
+				77CB8C1315E10CAF002A755C /* WebViewDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -88,7 +88,7 @@
 		77CB8C1C15E10CAF002A755C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				414F988D15E7C7CB00B99719 /* icon.png */,
+				77466C3C15F1E69E0067F5FF /* icon.png */,
 				77CB8C1D15E10CAF002A755C /* WebViewDemo-Info.plist */,
 				77CB8C1E15E10CAF002A755C /* InfoPlist.strings */,
 				77CB8C2115E10CAF002A755C /* main.m */,
@@ -107,7 +107,7 @@
 				77CB8C0F15E10CAF002A755C /* Sources */,
 				77CB8C1015E10CAF002A755C /* Frameworks */,
 				77CB8C1115E10CAF002A755C /* Resources */,
-				77C9A64815E1228500AF0E01 /* ShellScript */,
+				77C9A64815E1228500AF0E01 /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -115,7 +115,7 @@
 			);
 			name = WebViewDemo;
 			productName = WebViewDemo;
-			productReference = 77CB8C1315E10CAF002A755C /* TestWebTools.app */;
+			productReference = 77CB8C1315E10CAF002A755C /* WebViewDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -150,25 +150,26 @@
 			files = (
 				77CB8C2015E10CAF002A755C /* InfoPlist.strings in Resources */,
 				77CB8C2915E10CAF002A755C /* MainStoryboard.storyboard in Resources */,
-				414F988E15E7C7CB00B99719 /* icon.png in Resources */,
+				77466C3D15F1E69E0067F5FF /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		77C9A64815E1228500AF0E01 /* ShellScript */ = {
+		77C9A64815E1228500AF0E01 /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Run Script";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export CODESIGN_ALLOCATE=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate\nif [ \"${PLATFORM_NAME}\" == \"iphoneos\" ]; then\n/Applications/Xcode.app/Contents/Developer/iphoneentitlements401/gen_entitlements.py \"my.company.${PROJECT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\";\ncodesign -f -s \"IOS Developer\" --entitlements \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/\"\nfi";
+			shellScript = "";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -225,8 +226,8 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				SDKROOT = iphoneos5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -243,9 +244,9 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				SDKROOT = iphoneos5.0;
+				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -257,9 +258,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WebViewDemo/WebViewDemo-Prefix.pch";
 				INFOPLIST_FILE = "WebViewDemo/WebViewDemo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				PRODUCT_NAME = TestWebTools;
-				SDKROOT = iphoneos5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PRODUCT_NAME = WebViewDemo;
+				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -272,9 +273,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WebViewDemo/WebViewDemo-Prefix.pch";
 				INFOPLIST_FILE = "WebViewDemo/WebViewDemo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				PRODUCT_NAME = TestWebTools;
-				SDKROOT = iphoneos5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PRODUCT_NAME = WebViewDemo;
+				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};

@@ -1,248 +1,199 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2549" systemVersion="12B19" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2">
     <dependencies>
-        <deployment defaultVersion="1296" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1498"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="5">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="" id="2" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="1133470.jpg" id="9FD-Jc-cv4">
-                                <rect key="frame" x="42" y="8" width="236" height="107"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="zMH-ie-vke">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="459"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
-                            </imageView>
-                            <textField opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="可以输入文字" minimumFontSize="17" id="CPY-wg-vlo">
-                                <rect key="frame" x="120" y="138" width="180" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="textFieldDone:" destination="2" eventType="editingDidEndOnExit" id="5N3-so-4QP"/>
-                                </connections>
-                            </textField>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="UserName:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="GlY-6X-8Ap">
-                                <rect key="frame" x="21" y="138" width="86" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="只能输入数字" minimumFontSize="17" id="fyu-Iv-zkD">
-                                <rect key="frame" x="120" y="183" width="180" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                                <connections>
-                                    <action selector="textFieldDone:" destination="2" eventType="editingDidEndOnExit" id="RKj-Yy-Im3"/>
-                                </connections>
-                            </textField>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="PassWord:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="aAF-JP-glH">
-                                <rect key="frame" x="22" y="183" width="84" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="6RJ-Us-Qm9">
-                                <rect key="frame" x="57" y="320" width="207" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="开关"/>
-                                    <segment title="按钮"/>
-                                </segments>
-                                <connections>
-                                    <action selector="tabChange:" destination="2" eventType="valueChanged" id="1dI-hG-H4q"/>
-                                </connections>
-                            </segmentedControl>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="1" maxValue="100" id="CeC-N1-RUZ">
-                                <rect key="frame" x="101" y="259" width="201" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="slideChange:" destination="2" eventType="valueChanged" id="ywx-bp-sRW"/>
-                                </connections>
-                            </slider>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="50" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="3uF-4g-JZe">
-                                <rect key="frame" x="35" y="259" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="TZ0-DB-ZFr">
-                                <rect key="frame" x="30" y="403" width="79" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="switchChange:" destination="2" eventType="valueChanged" id="7U4-Hq-Yln"/>
-                                </connections>
-                            </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="OtY-oH-tHZ">
-                                <rect key="frame" x="213" y="403" width="79" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="switchChange:" destination="2" eventType="valueChanged" id="WYe-57-GSQ"/>
-                                </connections>
-                            </switch>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7oJ-fF-sxY">
-                                <rect key="frame" x="124" y="398" width="72" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="buttonPressed:" destination="2" eventType="touchUpInside" id="MSi-l5-5M2"/>
-                                    <action selector="tabChange:" destination="2" eventType="touchUpInside" id="Rp9-GT-3Hi"/>
-                                </connections>
-                            </button>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="8UO-mX-YFC">
+                                        <rect key="frame" x="56" y="330" width="207" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <segments>
+                                            <segment title="开关"/>
+                                            <segment title="按钮"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="tabChange:" destination="2" eventType="valueChanged" id="RkT-v9-ST4"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="50" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="3RV-rR-zWq">
+                                        <rect key="frame" x="34" y="268" width="42" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="PassWord:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="aaz-eB-8b0">
+                                        <rect key="frame" x="21" y="192" width="84" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="UserName:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="dYg-Oy-cJo">
+                                        <rect key="frame" x="20" y="147" width="86" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="1" maxValue="100" id="QEF-Wz-mGA">
+                                        <rect key="frame" x="100" y="268" width="201" height="23"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="slideChange:" destination="2" eventType="valueChanged" id="2m3-LZ-1TL"/>
+                                        </connections>
+                                    </slider>
+                                    <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="YMG-VO-Gjn">
+                                        <rect key="frame" x="29" y="412" width="79" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="switchChange:" destination="2" eventType="valueChanged" id="1nQ-WX-oG7"/>
+                                        </connections>
+                                    </switch>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="1133470.jpg" id="DGB-cw-SME">
+                                        <rect key="frame" x="41" y="17" width="236" height="107"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                    </imageView>
+                                    <textField opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="可以输入文字" minimumFontSize="17" id="jmJ-8H-iXU">
+                                        <rect key="frame" x="119" y="147" width="180" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                        <connections>
+                                            <action selector="textFieldDone:" destination="2" eventType="editingDidEndOnExit" id="fBY-0R-ySc"/>
+                                        </connections>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="15h-aw-eFG">
+                                        <rect key="frame" x="123" y="407" width="72" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="2" eventType="touchUpInside" id="j17-vu-wLr"/>
+                                            <action selector="tabChange:" destination="2" eventType="touchUpInside" id="HLc-l2-Qqa"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="只能输入数字" minimumFontSize="17" id="qlM-2D-Dz4">
+                                        <rect key="frame" x="119" y="192" width="180" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="go"/>
+                                        <connections>
+                                            <action selector="textFieldDone:" destination="2" eventType="editingDidEndOnExit" id="EmF-Pi-ksp"/>
+                                        </connections>
+                                    </textField>
+                                    <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="MOt-58-43M">
+                                        <rect key="frame" x="212" y="412" width="79" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="switchChange:" destination="2" eventType="valueChanged" id="qnY-Iy-lvw"/>
+                                        </connections>
+                                    </switch>
+                                </subviews>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="btnPressed" destination="7oJ-fF-sxY" id="tIe-py-KfO"/>
-                        <outlet property="lblScore" destination="3uF-4g-JZe" id="3If-XE-hNZ"/>
-                        <outlet property="leftSwitch" destination="TZ0-DB-ZFr" id="MUS-fX-MQe"/>
+                        <outlet property="btnPressed" destination="15h-aw-eFG" id="Jae-YT-N4f"/>
+                        <outlet property="lblScore" destination="3RV-rR-zWq" id="sid-4T-N5P"/>
+                        <outlet property="leftSwitch" destination="YMG-VO-Gjn" id="TVK-gG-5wF"/>
                         <outlet property="portrait" destination="3" id="oXa-5i-cU4"/>
-                        <outlet property="rightSwitch" destination="OtY-oH-tHZ" id="Lcg-Bk-OG4"/>
-                        <outlet property="scoreSlide" destination="CeC-N1-RUZ" id="rze-vW-sWa"/>
-                        <outlet property="tab" destination="6RJ-Us-Qm9" id="Cb6-Z5-wcJ"/>
-                        <outlet property="txtPassword" destination="fyu-Iv-zkD" id="Tix-xP-7jb"/>
-                        <outlet property="txtUserName" destination="CPY-wg-vlo" id="5sU-ZZ-Ckw"/>
-                        <outletCollection property="txtUserName" destination="CPY-wg-vlo" id="jDf-PQ-Zb7"/>
+                        <outlet property="rightSwitch" destination="MOt-58-43M" id="POO-pE-kMX"/>
+                        <outlet property="scoreSlide" destination="QEF-Wz-mGA" id="hwf-ZU-oz6"/>
+                        <outlet property="tab" destination="8UO-mX-YFC" id="d2A-Ac-Nlw"/>
+                        <outlet property="txtPassword" destination="qlM-2D-Dz4" id="9JK-yZ-s5N"/>
+                        <outlet property="txtUserName" destination="jmJ-8H-iXU" id="47t-Ui-nIR"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-876" y="-267"/>
+            <point key="canvasLocation" x="-1042" y="-436"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="jCA-wW-sM9">
+        <scene sceneID="ebd-sf-zgP">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CmQ-3k-vsh" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="3gA-c7-bQR" customClass="ViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="i2Z-u2-FYA">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eYV-DK-2wm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="5jv-gi-c3i" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jdn-ji-xt8">
                         <rect key="frame" x="0.0" y="20" width="480" height="300"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="1133470.jpg" id="SXD-JX-XqI">
-                                <rect key="frame" x="0.0" y="0.0" width="191" height="87"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="F1O-nv-cxt">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="300"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
-                            </imageView>
-                            <textField opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="可以输入文字" minimumFontSize="17" id="pq8-wZ-fGS">
-                                <rect key="frame" x="290" y="11" width="180" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="textFieldDone:" destination="2" eventType="editingDidEndOnExit" id="yC8-Aa-AgV"/>
-                                </connections>
-                            </textField>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="UserName:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Lrm-8s-5Pf">
-                                <rect key="frame" x="191" y="11" width="86" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="只能输入数字" minimumFontSize="17" id="2RN-mn-HRB">
-                                <rect key="frame" x="290" y="56" width="180" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                                <connections>
-                                    <action selector="textFieldDone:" destination="2" eventType="editingDidEndOnExit" id="Hz8-uh-Gd8"/>
-                                </connections>
-                            </textField>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="PassWord:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="FLF-qY-9AF">
-                                <rect key="frame" x="192" y="56" width="84" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="9oU-ZC-Le2">
-                                <rect key="frame" x="132" y="171" width="207" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="开关"/>
-                                    <segment title="按钮"/>
-                                </segments>
-                                <connections>
-                                    <action selector="tabChange:" destination="2" eventType="valueChanged" id="EPf-3I-NnF"/>
-                                </connections>
-                            </segmentedControl>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="1" maxValue="100" id="aXT-gl-0ur">
-                                <rect key="frame" x="176" y="110" width="201" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="slideChange:" destination="2" eventType="valueChanged" id="DQk-mg-WAf"/>
-                                </connections>
-                            </slider>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="50" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="RWM-Eo-eJI">
-                                <rect key="frame" x="110" y="110" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="ODY-uL-KZE">
-                                <rect key="frame" x="105" y="254" width="79" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="switchChange:" destination="2" eventType="valueChanged" id="kTz-qU-Hbj"/>
-                                </connections>
-                            </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="N7s-tC-3jp">
-                                <rect key="frame" x="288" y="254" width="79" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="switchChange:" destination="2" eventType="valueChanged" id="ccr-Kr-5GY"/>
-                                </connections>
-                            </switch>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="IAO-fT-AfB">
-                                <rect key="frame" x="199" y="249" width="72" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="buttonPressed:" destination="2" eventType="touchUpInside" id="gX3-ws-vXN"/>
-                                    <action selector="tabChange:" destination="2" eventType="touchUpInside" id="FRA-uJ-ahB"/>
-                                </connections>
-                            </button>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="50" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="o3z-DA-2xC">
+                                        <rect key="frame" x="20" y="20" width="42" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="1" maxValue="100" id="VOh-xJ-EDW">
+                                        <rect key="frame" x="86" y="21" width="201" height="23"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="slideChange:" destination="2" eventType="valueChanged" id="n6O-gN-Nbm"/>
+                                        </connections>
+                                    </slider>
+                                </subviews>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Pb8-x3-tAa"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                    <connections>
-                        <outlet property="landscape" destination="i2Z-u2-FYA" id="NlL-Uz-Ykh"/>
-                    </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="-533" y="-267"/>
+            <point key="canvasLocation" x="-695" y="-436"/>
         </scene>
     </scenes>
     <resources>
         <image name="1133470.jpg" width="300" height="200"/>
     </resources>
+    <classes>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="buttonPressed:"/>
+                <relationship kind="action" name="slideChange:"/>
+                <relationship kind="action" name="switchChange"/>
+                <relationship kind="action" name="switchChange:"/>
+                <relationship kind="action" name="tabChange:"/>
+                <relationship kind="action" name="textFieldDone:"/>
+                <relationship kind="outlet" name="btnPressed" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="landscape" candidateClass="UIView"/>
+                <relationship kind="outlet" name="lblScore" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="leftSwitch" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="portrait" candidateClass="UIView"/>
+                <relationship kind="outlet" name="rightSwitch" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="scoreSlide" candidateClass="UISlider"/>
+                <relationship kind="outlet" name="tab" candidateClass="UISegmentedControl"/>
+                <relationship kind="outlet" name="txtPassword" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="txtUserName" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
